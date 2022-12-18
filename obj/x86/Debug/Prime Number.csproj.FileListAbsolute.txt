@@ -1,0 +1,6 @@
+C:\Users\Dell\AppData\Local\Temporary Projects\Prime Number\bin\Debug\Prime Number.exe
+C:\Users\Dell\AppData\Local\Temporary Projects\Prime Number\bin\Debug\Prime Number.pdb
+C:\Users\Dell\AppData\Local\Temporary Projects\Prime Number\obj\x86\Debug\Prime Number.exe
+C:\Users\Dell\AppData\Local\Temporary Projects\Prime Number\obj\x86\Debug\Prime Number.pdb
+C:\Users\Dell\Desktop\Math\Prime Number\Prime Number\obj\x86\Debug\Prime Number.exe
+C:\Users\Dell\Desktop\Math\Prime Number\Prime Number\obj\x86\Debug\Prime Number.pdb
