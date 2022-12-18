@@ -3,53 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Prime_Number
+namespace Perfect_Number
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n1, n2, i, m = 0;
+            int n, i, sum, n1, n2;
+
             Console.Write("\n\n");
-            Console.Write("\tFind the prime numbers from n1 to n2 :\n");
-            Console.Write("\t(:---------------------------------------------------:)");
+            Console.Write("\tFind perfect numbers within a given number of range:\n");
+            Console.Write("\t-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
             Console.Write("\n\n");
 
             // receive the first input from the user
-            Console.Write("\tInput starting number of range: ");
+            Console.Write("\tInput the starting range or number : ");
             n1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("\n\t================================\n");
+            Console.WriteLine("\t-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
             // receive the last input from the user
-            Console.Write("\tInput ending number of range : ");
+            Console.Write("\tInput the ending range of number : ");
             n2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("\n\t=================================\n");
+            Console.WriteLine("\t-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
             // the output will appear here
-            Console.Write("\tThe prime numbers between {0} and {1} are : \n", n1, n2);
-
+            Console.Write("\tThe Perfect numbers between {0} and {1} are : \n", n1, n2);
             // rang of number the user entered
-            for (int j = n1; j <= n2; j++)
+            for (n = n1; n <= n2; n++)
             {
-                // beging of loop 1
+                i = 1;
+                sum = 0;
+                // the rule of perfect number
+                for (; i < n; i++)
+                {
+                    if (n % i == 0)
+                        sum = sum + i;
+                }
 
-                // the rule of prime number
-                for (i = 2; i <= j / 2; i++)
-                {
-                    // beging of loop 2
-                    m = 0;
-                    if (j % i == 0)
-                    {
-                        m++;
-                        break;
-                    }
-                    // end of loop 2
-                }
-                if (m == 0 && j != 1)
-                {
-                    Console.Write("\t{0}", j); // print the output
-                }
-                // end of loop 1
+                if (sum == n)
+                    Console.Write("\t{0} ", n);// print the output
             }
-
+            Console.Write("\n");
             Console.ReadLine();
         }
     }
